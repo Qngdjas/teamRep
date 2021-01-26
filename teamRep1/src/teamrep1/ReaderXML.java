@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public class ReaderXML {
 
     public static ArrayList<String> fileReader(File fileXML) {
-                Scanner reader = null;
+        Scanner reader = null;
         ArrayList<String> list = null;
         try {
             reader = new Scanner(fileXML);
@@ -20,7 +20,7 @@ public class ReaderXML {
             while (reader.hasNextLine()) {
                 //Запоминаем строки
                 str = reader.nextLine();
-                list.add(str);
+                list.add(str + "\n");
             }
         } catch (FileNotFoundException ex) {
             Logger.getLogger(ReaderXML.class.getName()).log(Level.SEVERE, null, ex);

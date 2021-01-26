@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses>
+	<course name="Mathematics">
+		<student name="Alexey" mark="3"/>
+		<student name="Dmitriy" mark="4"/>
+		<student name="Svetlana" mark="5"/>
+	</course>
+	<course name="Physics">
+		<student name="Alexey" mark="5"/>
+		<student name="Dmitriy" mark="2"/>
+		<student name="Svetlana" mark="5"/>
+	</course>
+	<course name="Phylosophy">
+		<student name="Alexey" mark="5"/>
+		<student name="Dmitriy" mark="3"/>
+		<student name="Svetlana" mark="4"/>
+	</course>
+</courses>

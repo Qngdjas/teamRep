@@ -17,7 +17,7 @@ import javax.xml.bind.Unmarshaller;
  */
 public class UnmarshallingClass {
 
-    public static boolean unmarshalling() {
+    public static Courses unmarshalling() {
         try {
             JAXBContext context = JAXBContext.newInstance(Courses.class);
             Unmarshaller m = context.createUnmarshaller();
@@ -25,13 +25,13 @@ public class UnmarshallingClass {
             Courses courses = (Courses) m.unmarshal(reader);
             //Вывод прочитанного
             System.out.println(courses);
-            return true;
+            return courses;
         } catch (JAXBException ex) {
             System.out.println("Unmarshalling error");
-            return false;
+            return null;
         } catch (FileNotFoundException ex) {
             System.out.println("Reading error");
-            return false;
+            return null;
         }
     }
 }
